@@ -1,132 +1,130 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>dracos</groupId>
-	<artifactId>dracos</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-
-
-	<dependencies>
-		<dependency>
-			<groupId>net.dv8tion</groupId>
-			<artifactId>JDA</artifactId>
-			<version>3.3.1_302</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.gitpaulo</groupId>
+  <artifactId>nissan</artifactId>
+  <version>4.0.0-BETA</version>
+  <name>Dracos Discord Bot</name>
+  
+  <build>
+        <plugins>
+            <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <version>3.5.1</version>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+      		</plugin>				
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-dependency-plugin</artifactId>
+			    <executions>
+			        <execution>
+			            <id>copy-dependencies</id>
+			            <phase>prepare-package</phase>
+			            <goals>
+			                <goal>copy-dependencies</goal>
+			            </goals>
+			            <configuration>
+			                <outputDirectory>~</outputDirectory>
+			                <overWriteReleases>false</overWriteReleases>
+			                <overWriteSnapshots>false</overWriteSnapshots>
+			                <overWriteIfNewer>true</overWriteIfNewer>
+			            </configuration>
+			        </execution>
+			    </executions>
+			</plugin>
+			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-jar-plugin</artifactId>
+			    <configuration>
+			        <archive>
+			            <manifest>
+			                <addClasspath>true</addClasspath>
+			                <classpathPrefix>lib/</classpathPrefix>
+			                <mainClass>dracos.Main</mainClass>
+			            </manifest>
+			        </archive>
+			    </configuration>
+			</plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>1.2.1</version>
+                <configuration> 
+                    <mainClass>dracos.Main</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build> 
+     
+    <dependencies>
+	  	<dependency>
+	    	<groupId>net.dv8tion</groupId>
+	    	<artifactId>JDA</artifactId>
+	    	<version>3.3.1_303</version>
 		</dependency>
-
-
 		<dependency>
-			<groupId>org.apache.maven</groupId>
-			<artifactId>maven-model</artifactId>
-			<version>3.3.9</version>
-			
-		</dependency>
-
-
+  			<groupId>org.apache.maven</groupId>
+  			<artifactId>maven-model</artifactId>
+		    <version>3.3.9</version>
+		</dependency> 
+		  <dependency>
+		    <groupId>com.sedmelluq</groupId>
+		    <artifactId>lavaplayer</artifactId>
+		    <version>1.2.44</version> 
+		  </dependency>	
 		<dependency>
-			<groupId>com.sedmelluq</groupId>
-			<artifactId>lavaplayer</artifactId>
-			<version>1.2.42</version>
+   		 	<groupId>org.beanshell</groupId>
+	    	<artifactId>bsh</artifactId>
+	    	<version>2.0b5</version>
 		</dependency>
-
-
 		<dependency>
-			<groupId>org.beanshell</groupId>
-			<artifactId>bsh</artifactId>
-			<version>2.0b5</version>
+    		<groupId>org.jsoup</groupId>
+    		<artifactId>jsoup</artifactId>
+    		<version>1.8.3</version>
 		</dependency>
-
-
-		<dependency>
-			<groupId>org.jsoup</groupId>
-			<artifactId>jsoup</artifactId>
-			<version>1.8.3</version>
-		</dependency>
-
-
 		<dependency>
 			<groupId>at.mukprojects</groupId>
 			<artifactId>giphy4j</artifactId>
 			<version>1.0.1</version>
 		</dependency>
-
-
 		<dependency>
-			<groupId>com.michaelwflaherty</groupId>
-			<artifactId>cleverbotapi</artifactId>
-			<version>1.0.2</version>
+    		<groupId>com.michaelwflaherty</groupId>
+		   <artifactId>cleverbotapi</artifactId>
+		   <version>1.0.2</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-core</artifactId>
+		    <version>2.9.2</version>
 		</dependency>
 
-
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-databind</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
+		
+		<dependency>
+		    <groupId>com.fasterxml.jackson.core</groupId>
+		    <artifactId>jackson-annotations</artifactId>
+		    <version>2.9.2</version>
+		</dependency>
 	</dependencies>
-
-
+	
 	<repositories>
 		<repository>
-			<id>jcenter</id>
-			<name>jcenter-bintray</name>
-			<url>http://jcenter.bintray.com</url>
+		    <id>jcenter</id>
+		    <name>jcenter-bintray</name>
+		    <url>http://jcenter.bintray.com</url>
 		</repository>
-
-		<repository>
-			<id>central</id>
-			<name>bintray</name>
-			<url>http://jcenter.bintray.com</url>
-		</repository>
+		  <repository>
+		    <id>central</id>
+		    <name>bintray</name>
+		    <url>http://jcenter.bintray.com</url>
+ 		 </repository>	  	
 	</repositories>
-
-
-	<build>
-     <plugins>
-    <!-- This plugin provides the capability to package the artifact in an uber-jar, including its dependencies and to shade - i.e. rename - the packages of some of the dependencies. -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-shade-plugin</artifactId>
-            <version>1.4</version>
-            <executions>
-                <execution>
-                    <phase>package</phase>
-                    <goals>
-                        <goal>shade</goal>
-                    </goals>
-                    <configuration>
-						<source>1.7</source>
-						<target>1.7</target>
-                        <artifactSet>
-                        <!-- signed jars-->
-                            <excludes>
-                                <exclude>bouncycastle:bcprov-jdk17</exclude>
-                            </excludes>
-                        </artifactSet>
-
-                         <transformers>
-                            <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                <!-- Main class -->
-                                <mainClass>Dracos/src/main/java/dracos/dracos/Main</mainClass>
-                            </transformer>
-                            <!-- Use resource transformers to prevent file overwrites -->
-                            <transformer 
-                                 implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                <resource>properties.properties</resource>
-                            </transformer>
-                            <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.XmlAppendingTransformer">
-                                <resource>applicationContext.xml</resource>
-                            </transformer>
-                            <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.AppendingTransformer">
-                                <resource>META-INF/cxf/cxf.extension</resource>
-                            </transformer>
-                            <transformer
-                                implementation="org.apache.maven.plugins.shade.resource.XmlAppendingTransformer">
-                                <resource>META-INF/cxf/bus-extensions.xml</resource>
-                            </transformer>
-                     </transformers>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
-
-    </plugins>
-</build>
+  	
 </project>
