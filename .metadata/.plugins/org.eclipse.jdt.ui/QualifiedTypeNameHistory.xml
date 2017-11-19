@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.JDA"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.JDABuilder"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.AccountType"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.hooks.ListenerAdapter"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.events.guild.GuildJoinEvent"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.Guild"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.player.AudioPlayerManager"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.player.event.AudioEventAdapter"/>
+<fullyQualifiedTypeName name="java.util.concurrent.BlockingQueue"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.track.AudioTrack"/>
+<fullyQualifiedTypeName name="java.util.concurrent.LinkedBlockingQueue"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.track.AudioTrackEndReason"/>
+<fullyQualifiedTypeName name="java.util.Timer"/>
+<fullyQualifiedTypeName name="java.util.TimerTask"/>
+<fullyQualifiedTypeName name="ch.qos.logback.core.net.server.Client"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.MessageBuilder"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.MessageEmbed"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.EmbedBuilder"/>
+<fullyQualifiedTypeName name="dracos.dracos.DiscordMessage"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.Message"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.audio.AudioSendHandler"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.player.AudioPlayer"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.track.playback.AudioFrame"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.User"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.player.DefaultAudioPlayerManager"/>
+<fullyQualifiedTypeName name="com.sedmelluq.discord.lavaplayer.source.AudioSourceManagers"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="dracos.dracos.Main"/>
+<fullyQualifiedTypeName name="net.dv8tion.jda.core.entities.Game"/>
+</qualifiedTypeNameHistroy>

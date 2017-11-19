@@ -1,0 +1,40 @@
+package dracos.util;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.HashMap;
+
+public static class ShortcutFileHandling {
+
+	public void loadShortcuts(HashMap<String, String> shortcuts) {
+		
+		File shcuts = new File("shortcuts.txt");
+		FileReader fr = null;
+		BufferedReader bf = null;
+		
+		
+		if (shcuts.exists()) {
+
+			try {
+
+				fr = new FileReader(shcuts);
+				bf = new BufferedReader(fr);
+				String line;
+				while ((line = bf.readLine()) != null) {
+
+					String key = line.split(",")[0];
+					String link = line.split(",")[1];
+					System.out.println(shcuts.getAbsolutePath());
+					shortcuts.put(key, link);
+				}
+				fr.close();
+				bf.close();
+			} catch (Exception exception) {
+
+			}
+		}
+
+	}
+
+}
