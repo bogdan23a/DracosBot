@@ -96,7 +96,7 @@
                         <artifactSet>
                         <!-- signed jars-->
                             <excludes>
-                                <exclude>bouncycastle:bcprov-jdk15</exclude>
+                                <exclude>bouncycastle:bcprov-jdk17</exclude>
                             </excludes>
                         </artifactSet>
 
