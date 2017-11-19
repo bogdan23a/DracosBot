@@ -7,7 +7,7 @@ desecration,https://www.youtube.com/watch?v=v-nNksBWxNI
 rick,https://www.youtube.com/watch?v=pTA0DSfrGZ0
 angels,https://www.youtube.com/watch?v=8MHZ3GwPRqA
 vacancy,https://www.youtube.com/watch?v=qXiuVQ-GgA4
-mai,\local_sounds\mai.mp3
+mai,local_sounds\mai.mp3
 oricerau,https://www.youtube.com/watch?v=-_bI-x84IPs
 waves,https://soundcloud.com/bloommusicofficial/mr-probz-waves-bloom
 churchill,https://www.youtube.com/watch?v=E4MEjgKVQPo&t=1s
@@ -19,7 +19,7 @@ run,https://www.youtube.com/watch?v=_urX_KjrmEc
 dontworry,https://www.youtube.com/watch?v=L3HQMbQAWRc
 christmassmix,https://www.youtube.com/watch?v=8Bro2MSpSF4&t=25s
 gangsta'sparadise,https://www.youtube.com/watch?v=e-6bumMM5NI
-ni,\local_sounds\nii.mp3
+ni,local_sounds\nii.mp3
 goodgirls,https://www.youtube.com/watch?v=h1S-ubiF6Dk
 siasanta,https://www.youtube.com/watch?v=cF_6J7d0EN4
 uptown,https://www.youtube.com/watch?v=MTtInVAztIw
