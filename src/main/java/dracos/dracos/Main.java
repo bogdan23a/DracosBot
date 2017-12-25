@@ -8,6 +8,7 @@ import dracos.commands.Help;
 import dracos.commands.Music;
 import dracos.commands.Ping;
 import dracos.commands.Youtube;
+import dracos.commands.IMDB;
 import dracos.listeners.GeneralListener;
 import dracos.listeners.MessageListener;
 import net.dv8tion.jda.core.AccountType;
