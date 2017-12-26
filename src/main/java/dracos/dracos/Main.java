@@ -35,10 +35,11 @@ public class Main extends ListenerAdapter {
 		prefixes[0] = "!";
 		
 		commands.put("ping", new Ping());
-		commands.put("imdb", new IMDB());
 		commands.put("help", new Help());
 		commands.put("music", new Music());
 		commands.put("youtube", new Youtube());
+		commands.put("imdb", new IMDB());
+
 		try
 		{
 			bot = new Client(new JDABuilder(AccountType.BOT)

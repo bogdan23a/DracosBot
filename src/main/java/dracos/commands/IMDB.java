@@ -36,7 +36,7 @@ public class IMDB implements Command{
 		
 		
 		
-	};
+	}
 	@Override
 	public boolean called(String raw, String[] args, MessageReceivedEvent event) {
 		if (args.length < 1) {
@@ -53,7 +53,6 @@ public class IMDB implements Command{
 
 	@Override
 	public void action(String raw, String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
 		 event.getChannel()
          .sendMessage(DiscordMessage.embedMessage(event.getAuthor(),
                "PONG!",
@@ -68,37 +67,31 @@ public class IMDB implements Command{
 
 	@Override
 	public void Executed(boolean succ, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
 	public String getDescription() {
-		// TODO Auto-generated method stub
 		return "All IMDB commands start with this one";
 	}
 
 	@Override
 	public HashMap<String, String> getSubCommands() {
-		// TODO Auto-generated method stub
 		return subcommands;
 	}
 
 	@Override
 	public CommandCategory getCategory() {
-		// TODO Auto-generated method stub
 		return CommandCategory.UTILITY;
 	}
 
 	@Override
 	public CommandScope getScope() {
-		// TODO Auto-generated method stub
 		return CommandScope.BOTH;
 	}
 
 	@Override
 	public boolean isListed() {
-		// TODO Auto-generated method stub
 		return true;
 	}
 
