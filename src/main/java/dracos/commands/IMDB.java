@@ -1,5 +1,6 @@
 package dracos.commands;
 
+import java.awt.Color;
 import java.util.HashMap;
 
 import dracos.dracos.Command;
@@ -11,7 +12,7 @@ import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 public class IMDB implements Command{
 
 	private final static HashMap<String, String> subcommands;
-	
+	private long t0;
 	
 	static {
 		subcommands = new HashMap<String, String>();
@@ -46,13 +47,23 @@ public class IMDB implements Command{
 			
 			return false;
 		}
-		return true;
+      t0 = System.currentTimeMillis();
+      return true;
 	}
 
 	@Override
 	public void action(String raw, String[] args, MessageReceivedEvent event) {
 		// TODO Auto-generated method stub
-		
+		 event.getChannel()
+         .sendMessage(DiscordMessage.embedMessage(event.getAuthor(),
+               "PONG!",
+               Color.white,
+               "I took **" + (System.currentTimeMillis() - t0) + "ms** to answer that!\n My latency: "
+               + event.getJDA().getPing() + "ms",
+               
+               "http://www.yorozuyasoul.com/images/omake/omake_ep4-1.jpg"
+          ))
+  .queue();
 	}
 
 	@Override
@@ -64,7 +75,7 @@ public class IMDB implements Command{
 	@Override
 	public String getDescription() {
 		// TODO Auto-generated method stub
-		return "all IMDB commands start with this one";
+		return "All IMDB commands start with this one";
 	}
 
 	@Override
