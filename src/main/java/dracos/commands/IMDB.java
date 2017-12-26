@@ -5,6 +5,7 @@ import java.util.HashMap;
 import dracos.dracos.Command;
 import dracos.dracos.CommandCategory;
 import dracos.dracos.CommandScope;
+import dracos.dracos.DiscordMessage;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 
 public class IMDB implements Command{
@@ -34,11 +35,17 @@ public class IMDB implements Command{
 		
 		
 		
-	}
+	};
 	@Override
 	public boolean called(String raw, String[] args, MessageReceivedEvent event) {
-		// TODO Auto-generated method stub
-		
+		if (args.length < 1) {
+			event.getTextChannel()
+					.sendMessage(
+							DiscordMessage.embedProblem(event.getAuthor(), "Invalid **arguments**! Try !help music"))
+					.queue();
+			
+			return false;
+		}
 		return true;
 	}
 
