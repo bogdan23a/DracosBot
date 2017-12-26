@@ -93,7 +93,7 @@ public class IMDB implements Command{
 	@Override
 	public CommandScope getScope() {
 		// TODO Auto-generated method stub
-		return CommandScope.PUBLIC;
+		return CommandScope.BOTH;
 	}
 
 	@Override
